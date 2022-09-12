@@ -43,7 +43,9 @@ const liquidate = async (
     msg: Buffer.from(
       JSON.stringify({
         liquidates: {
-          addresses,
+          manual: {
+            addresses,
+          },
         },
       })
     ),
